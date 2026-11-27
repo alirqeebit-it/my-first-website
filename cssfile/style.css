@@ -1,0 +1,101 @@
+:root{
+    --primarycolor: hsl(350, 100%, 58%);
+    --secondarycolor: #f7bcf7;
+    --lightcolor: #fff ;
+    --bgcolor-1: #171a1c;
+    --bgcolor-2: #22282a;
+    --padding: 8% ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    display: flex;
+    flex-direction: column;
+}
+
+.home .header{
+    width: 100%;
+    padding: 20px;
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bgcolor-1);
+    box-shadow: 0 4px 20px var(--bgcolor-1);
+}
+
+.header h2{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 0.12rem;
+}
+
+.header h2 span{
+    color: var(--primarycolor);
+}
+
+.header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+.header ul li a{
+    color: var(--lightcolor);
+    font-size: large;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.header ul li a:hover{
+    color: var(--primarycolor);
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--lightcolor);
+    background-color: var(--primarycolor);
+    padding: 10px;
+    border: 1px solid var(--bgcolor-2);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    border: 1px solid var(--primarycolor);
+    background-color: var(--bgcolor-1);
+}
+
+.content{
+    flex-grow: 1;
+    color: var(--lightcolor);
+    padding: var(--padding);
+    padding-left: 80px;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+.content span{
+    color: var(--primarycolor);
+}
+
+.content h1{
+    font-size: 50px;
+}
+
+.content h3{
+    margin-bottom: 40px;
+    font-weight: 500;
+    letter-spacing: 0.12rem;
+}
